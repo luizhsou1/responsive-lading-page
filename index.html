@@ -13,9 +13,9 @@
 
 <body>
   <header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">fruta & fruto</a>
+        <a class="navbar-brand titulo" href="#">fruta & fruto</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
           aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -25,7 +25,7 @@
             <li><a class="nav-link active" aria-current="page" href="#">início</a></li>
             <li><a class="nav-link" href="#">receitas</a></li>
             <li><a class="nav-link" href="#">quem somos</a></li>
-            <li><a class="nav-link" href="#">contato</a></li>
+            <li><a class="nav-link" data-bs-toggle="modal" data-bs-target="#modal-contato" href="#">contato</a></li>
           </ul>
         </div>
       </div>
@@ -69,7 +69,7 @@
     </section>
 
     <section id="titulo">
-      <h1 class="text-center fonte-titulo cor-especial pt-5">Receitas para economizar e ganhar saúde</h1>
+      <h1 class="text-center titulo pt-5">Receitas para economizar e ganhar saúde</h1>
       <p class="text-center text-secondary pb-5">Nossas receitas ajudam você a aproveitar melhor os alimentos,
         economizar,
         ganhar tempo e praticidade</p>
@@ -141,6 +141,39 @@
       </div>
     </section>
   </main>
+
+  <!-- Modal -->
+  <div class="modal fade" id="modal-contato" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <dialog class="modal-content">
+        <header class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Entre em contato</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </header>
+        <main class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="exampleInputName1" class="form-label">Nome completo</label>
+              <input type="text" class="form-control" placeholder="Insira seu nome completo" id="exampleInputName1">
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Endereço de e-mail</label>
+              <input type="email" class="form-control" placeholder="Insira seu endereço de e-mail" id="exampleInputEmail1">
+              <div id="emailHelp" class="form-text">Nunca compartilharemos seu e-mail com mais ninguém.</div>
+            </div>
+            <div class="mb-3">
+              <label for="exampleTextarea" class="form-label">Deixe seu comentário</label>
+              <textarea type="email" class="form-control" placeholder="Insira aqui seu comentário" id="exampleTextarea" rows="3"></textarea>
+            </div>
+          </form>
+        </main>
+        <footer class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+          <button type="button" class="btn botao-cor-especial">Enviar</button>
+        </footer>
+      </dialog>
+    </div>
+  </div>
 
   <p>contato:<a href="mailto:email@frutafruto.com.br">email@frutafruto.com.br</a></p>
 

@@ -10,16 +10,15 @@
 
 .imagem-carrossel-dois {
     object-fit: cover;
+    object-position: 0 50%;
     height: 400px;
 }
 
-.fonte-titulo {
+.titulo {
     font-family: 'Pacifico', cursive;
+    color: darkred!important;
 }
 
-.cor-especial {
-    color: darkred;
-}
 .botao-cor-especial {
     color: white;
     background-color: darkred;
